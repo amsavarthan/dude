@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Phil Shadlyn
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <string-array name="subjects" translatable="false">
+        <item>All</item>
+        <item>Accountancy</item>
+        <item>Astronomy</item>
+        <item>Biology</item>
+        <item>Business Maths</item>
+        <item>Computer Science</item>
+        <item>Commerce</item>
+        <item>Chemistry</item>
+        <item>Economics</item>
+        <item>Geography</item>
+        <item>History</item>
+        <item>Physics</item>
+        <item>Political Science</item>
+        <item>Maths</item>
+    </string-array>
+
+    <string-array name="entries_kmh_or_mph">
+        <item>@string/kmh</item>
+        <item>@string/mph</item>
+    </string-array>
+    <string-array name="entries_kmh_or_mph_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="kmh">KM/H</string>
+    <string name="mph">MPH</string>
+
+    <string-array name="input" translatable="false">
+        <item>@string/accounting</item>
+        <item>@string/airport</item>
+        <item>@string/amusement_park</item>
+        <item>@string/aquarium</item>
+        <item>@string/art_gallery</item>
+        <item>@string/atm</item>
+        <item>@string/bakery</item>
+        <item>@string/bank</item>
+        <item>@string/bar</item>
+        <item>@string/beauty_salon</item>
+        <item>@string/bicycle_store</item>
+        <item>@string/book_store</item>
+        <item>@string/bowling_alley</item>
+        <item>@string/bus_station</item>
+        <item>@string/cafe</item>
+        <item>@string/campground</item>
+        <item>@string/car_dealer</item>
+        <item>@string/car_rental</item>
+        <item>@string/car_repair</item>
+        <item>@string/car_wash</item>
+        <item>@string/casino</item>
+        <item>@string/cemetery</item>
+        <item>@string/church</item>
+        <item>@string/city_hall</item>
+        <item>@string/clothing_store</item>
+        <item>@string/convenience_store</item>
+        <item>@string/courthouse</item>
+        <item>@string/dentist</item>
+        <item>@string/department_store</item>
+        <item>@string/doctor</item>
+        <item>@string/electrician</item>
+        <item>@string/electronics_store</item>
+        <item>@string/embassy</item>
+        <item>@string/fire_station</item>
+        <item>@string/florist</item>
+        <item>@string/funeral_home</item>
+        <item>@string/furniture_store</item>
+        <item>@string/gas_station</item>
+        <item>@string/gym</item>
+        <item>@string/hair_care</item>
+        <item>@string/hardware_store</item>
+        <item>@string/hindu_temple</item>
+        <item>@string/home_goods_store</item>
+        <item>@string/hospital</item>
+        <item>@string/insurance_agency</item>
+        <item>@string/jewelry_store</item>
+        <item>@string/laundry</item>
+        <item>@string/lawyer</item>
+        <item>@string/library</item>
+        <item>@string/liquor_store</item>
+        <item>@string/local_government_office</item>
+        <item>@string/locksmith</item>
+        <item>@string/lodging</item>
+        <item>@string/meal_delivery</item>
+        <item>@string/meal_takeaway</item>
+        <item>@string/mosque</item>
+        <item>@string/movie_rental</item>
+        <item>@string/movie_theater</item>
+        <item>@string/moving_company</item>
+        <item>@string/museum</item>
+        <item>@string/night_club</item>
+        <item>@string/painter</item>
+        <item>@string/park</item>
+        <item>@string/parking</item>
+        <item>@string/pet_store</item>
+        <item>@string/pharmacy</item>
+        <item>@string/physiotherapist</item>
+        <item>@string/plumber</item>
+        <item>@string/police</item>
+        <item>@string/post_office</item>
+        <item>@string/real_estate_agency</item>
+        <item>@string/restaurant</item>
+        <item>@string/roofing_contractor</item>
+        <item>@string/rv_park</item>
+        <item>@string/school</item>
+        <item>@string/shoe_store</item>
+        <item>@string/shopping_mall</item>
+        <item>@string/spa</item>
+        <item>@string/stadium</item>
+        <item>@string/storage</item>
+        <item>@string/store</item>
+        <item>@string/subway_station</item>
+        <item>@string/synagogue</item>
+        <item>@string/taxi_stand</item>
+        <item>@string/train_station</item>
+        <item>@string/transit_station</item>
+        <item>@string/travel_agency</item>
+        <item>@string/university</item>
+        <item>@string/veterinary_care</item>
+        <item>@string/zoo</item>
+    </string-array>
+
+    <string-array name="ocr" translatable="false">
+        <item>Right Eye</item>
+        <item>Left Eye</item>
+    </string-array>
+
+    <string-array name="subject" translatable="false">
+        <item>Accountancy</item>
+        <item>Astronomy</item>
+        <item>Biology</item>
+        <item>Business Maths</item>
+        <item>Computer Science</item>
+        <item>Commerce</item>
+        <item>Chemistry</item>
+        <item>Economics</item>
+        <item>Geography</item>
+        <item>History</item>
+        <item>Physics</item>
+        <item>Political Science</item>
+        <item>Maths</item>
+    </string-array>
+
+    <string-array name="blood_groups">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>H/H</item>
+    </string-array>
+
+    <string-array name="orgon_donor">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Unknown</item>
+    </string-array>
+
+
+</resources>

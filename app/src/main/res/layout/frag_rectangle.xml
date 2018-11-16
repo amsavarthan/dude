@@ -1,0 +1,362 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:background="@color/cardview_dark_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_marginTop="10dp"
+           android:textColor="#8BC34A"
+           android:paddingStart="15dp"
+           android:paddingEnd="10dp"
+           android:text="Math Functions"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+       <TextView
+           android:textColor="#fff"
+           android:textSize="22sp"
+           android:paddingStart="15dp"
+           android:paddingEnd="10dp"
+           android:layout_marginBottom="10dp"
+           android:text="Rectangle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+       <android.support.v7.widget.CardView
+           android:layout_centerInParent="true"
+           android:layout_below="@id/top"
+           app:cardCornerRadius="10dp"
+           app:cardElevation="6dp"
+           app:cardBackgroundColor="@color/cardview_light_background"
+           app:cardUseCompatPadding="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:padding="10dp"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:gravity="center_vertical"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:text="Area"
+                       android:layout_weight="2"
+                       android:textSize="16sp"
+                       android:padding="5dp"
+                       android:textColor="#212121"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <Button
+                       android:id="@+id/find_a"
+                       android:backgroundTint="#8BC34A"
+                       android:text="Find"
+                       android:textAllCaps="false"
+                       style="@style/Base.Widget.AppCompat.Button.Colored"
+                       android:src="@drawable/search_white"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+               <View
+                   android:background="#ddd"
+                   android:layout_marginBottom="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"/>
+
+               <android.support.design.widget.TextInputLayout
+                   android:hint="Length (l)"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/input_area_length"
+                       android:background="@null"
+                       android:padding="5dp"
+                       android:inputType="number"
+                       android:layout_marginBottom="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       tools:ignore="MissingPrefix" />
+
+               </android.support.design.widget.TextInputLayout>
+
+               <android.support.design.widget.TextInputLayout
+                   android:hint="Width or Breadth (b)"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/input_area_width"
+                       android:background="@null"
+                       android:padding="5dp"
+                       android:inputType="number"
+                       android:layout_marginBottom="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       tools:ignore="MissingPrefix" />
+
+               </android.support.design.widget.TextInputLayout>
+
+
+               <android.support.design.widget.TextInputLayout
+                   android:hint="Area of the Rectangle"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/output_area"
+                       android:background="@null"
+                       android:padding="5dp"
+                       android:textColor="#212121"
+                       android:text="lb"
+                       android:inputType="number"
+                       android:enabled="false"
+                       android:layout_marginBottom="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       tools:ignore="MissingPrefix" />
+
+               </android.support.design.widget.TextInputLayout>
+
+           </LinearLayout>
+
+       </android.support.v7.widget.CardView>
+
+       <android.support.v7.widget.CardView
+           android:layout_centerInParent="true"
+           android:layout_below="@id/top"
+           app:cardCornerRadius="10dp"
+           app:cardElevation="6dp"
+           app:cardBackgroundColor="@color/cardview_light_background"
+           app:cardUseCompatPadding="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:padding="10dp"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:gravity="center_vertical"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:text="Perimeter"
+                       android:layout_weight="2"
+                       android:textSize="16sp"
+                       android:padding="5dp"
+                       android:textColor="#212121"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <Button
+                       android:id="@+id/find_p"
+                       android:backgroundTint="#8BC34A"
+                       android:text="Find"
+                       android:textAllCaps="false"
+                       style="@style/Base.Widget.AppCompat.Button.Colored"
+                       android:src="@drawable/search_white"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+               <View
+                   android:background="#ddd"
+                   android:layout_marginBottom="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"/>
+
+               <android.support.design.widget.TextInputLayout
+                   android:hint="Length (l)"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/input_perimeter_length"
+                       android:background="@null"
+                       android:padding="5dp"
+                       android:inputType="number"
+                       android:layout_marginBottom="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       tools:ignore="MissingPrefix" />
+
+               </android.support.design.widget.TextInputLayout>
+
+               <android.support.design.widget.TextInputLayout
+                   android:hint="Width or Breadth (b)"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/input_perimeter_width"
+                       android:background="@null"
+                       android:padding="5dp"
+                       android:inputType="number"
+                       android:layout_marginBottom="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       tools:ignore="MissingPrefix" />
+
+               </android.support.design.widget.TextInputLayout>
+
+
+               <android.support.design.widget.TextInputLayout
+                   android:hint="Perimeter of the Rectangle"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/output_perimeter"
+                       android:background="@null"
+                       android:textColor="#212121"
+                       android:padding="5dp"
+                       android:text="2(l+b)"
+                       android:inputType="number"
+                       android:enabled="false"
+                       android:layout_marginBottom="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       tools:ignore="MissingPrefix" />
+
+               </android.support.design.widget.TextInputLayout>
+
+           </LinearLayout>
+
+       </android.support.v7.widget.CardView>
+
+       <android.support.v7.widget.CardView
+           android:layout_centerInParent="true"
+           android:layout_below="@id/top"
+           app:cardCornerRadius="10dp"
+           app:cardElevation="6dp"
+           app:cardBackgroundColor="@color/cardview_light_background"
+           app:cardUseCompatPadding="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:padding="10dp"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:gravity="center_vertical"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:text="Diagonal"
+                       android:layout_weight="2"
+                       android:textSize="16sp"
+                       android:padding="5dp"
+                       android:textColor="#212121"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <Button
+                       android:id="@+id/find_d"
+                       android:backgroundTint="#8BC34A"
+                       android:text="Find"
+                       android:textAllCaps="false"
+                       style="@style/Base.Widget.AppCompat.Button.Colored"
+                       android:src="@drawable/search_white"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+               <View
+                   android:background="#ddd"
+                   android:layout_marginBottom="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"/>
+
+               <android.support.design.widget.TextInputLayout
+                   android:hint="Length (l)"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/input_diagonal_length"
+                       android:background="@null"
+                       android:padding="5dp"
+                       android:inputType="number"
+                       android:layout_marginBottom="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       tools:ignore="MissingPrefix" />
+
+               </android.support.design.widget.TextInputLayout>
+
+               <android.support.design.widget.TextInputLayout
+                   android:hint="Width or Breadth (b)"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/input_diagonal_width"
+                       android:background="@null"
+                       android:padding="5dp"
+                       android:inputType="number"
+                       android:layout_marginBottom="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       tools:ignore="MissingPrefix" />
+
+               </android.support.design.widget.TextInputLayout>
+
+
+               <android.support.design.widget.TextInputLayout
+                   android:hint="Diagonal of the Rectangle"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/output_diagonal"
+                       android:background="@null"
+                       android:padding="5dp"
+                       android:text="√(l^2+b^2)"
+                       android:textColor="#212121"
+                       android:inputType="number"
+                       android:enabled="false"
+                       android:layout_marginBottom="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       tools:ignore="MissingPrefix" />
+
+               </android.support.design.widget.TextInputLayout>
+
+           </LinearLayout>
+
+       </android.support.v7.widget.CardView>
+
+
+   </LinearLayout>
+
+
+</ScrollView>

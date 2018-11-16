@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+   <LinearLayout
+       android:clickable="true"
+       android:focusable="true"
+       android:orientation="vertical"
+       android:foreground="?selectableItemBackground"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/query"
+           android:textColor="#212121"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:textSize="18sp"
+           tools:ignore="MissingPrefix" />
+
+       <LinearLayout
+           android:gravity="end"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/search"
+               android:foreground="?selectableItemBackground"
+               android:padding="10dp"
+               android:src="@drawable/search"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <ImageView
+               android:id="@+id/remove"
+               android:foreground="?selectableItemBackground"
+               android:padding="10dp"
+               android:src="@drawable/ic_delete_black_24dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</android.support.v7.widget.CardView>

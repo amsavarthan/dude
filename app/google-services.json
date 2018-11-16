@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "124066705770",
+    "firebase_url": "https://dude-6a6a2.firebaseio.com",
+    "project_id": "dude-6a6a2",
+    "storage_bucket": "dude-6a6a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124066705770:android:6280fdd19b76aa2e",
+        "android_client_info": {
+          "package_name": "com.amsavarthan.dude"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124066705770-i01tj1hlj9hauh814lb8lh1riqp644ri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amsavarthan.dude",
+            "certificate_hash": "24630d94558a658aa7e3b219be7b88680cf4eca7"
+          }
+        },
+        {
+          "client_id": "124066705770-iga4nbcd601mpnr8rg34an4a4gcpb6s4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amsavarthan.dude",
+            "certificate_hash": "71c6ced8e142b82a00f671082cc0081811eeca42"
+          }
+        },
+        {
+          "client_id": "124066705770-33dg2ena3jgs8qtpprsdqkbb5bbj653i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amsavarthan.dude",
+            "certificate_hash": "9c6d69514973dc8f0356b658f57aa5b58c3323bc"
+          }
+        },
+        {
+          "client_id": "124066705770-cjps8pg89cg3odkcel0s47kcbpvu68au.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKfvYWrGFrUrQrE2A6z_ohuK1P2im0RFE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124066705770-cjps8pg89cg3odkcel0s47kcbpvu68au.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124066705770:android:b072720f93404399",
+        "android_client_info": {
+          "package_name": "com.amsavarthan.dudepolice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124066705770-giedup8f5o9s96c442vf44h3tls71ofn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amsavarthan.dudepolice",
+            "certificate_hash": "71c6ced8e142b82a00f671082cc0081811eeca42"
+          }
+        },
+        {
+          "client_id": "124066705770-cjps8pg89cg3odkcel0s47kcbpvu68au.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKfvYWrGFrUrQrE2A6z_ohuK1P2im0RFE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124066705770-cjps8pg89cg3odkcel0s47kcbpvu68au.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

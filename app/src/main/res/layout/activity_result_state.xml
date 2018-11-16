@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/layout"
+    android:background="#536DFE"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp"
+    android:orientation="vertical"
+    tools:context=".activities.ResultState">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:padding="10dp"
+               android:onClick="goBack"
+               android:src="@drawable/back"
+               android:clickable="true"
+               android:focusable="true"
+               android:foreground="?selectableItemBackground"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent" />
+
+           <TextView
+               android:id="@+id/title"
+               fontPath="fonts/bold.ttf"
+               android:text="Title"
+               android:textColor="#fff"
+               android:layout_marginStart="5dp"
+               android:textSize="19sp"
+               android:gravity="center_vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               tools:ignore="MissingPrefix" />
+
+       </LinearLayout>
+
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/recyclerView"
+           android:padding="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+
+   </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

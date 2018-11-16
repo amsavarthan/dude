@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Settings">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_toStartOf="@+id/save"
+                android:paddingStart="15dp"
+                android:textSize="30sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorAccent"
+                android:text="Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:text=" Save"
+                android:onClick="onSaveClicked"
+                android:drawableStart="@drawable/ic_save_black_24dp"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/acc"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="15dp"
+                android:text="Accident detection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:id="@+id/acciswitch"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="#212121"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="15dp"
+            android:text="Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="Name"
+            android:padding="13dp"
+            android:inputType="textPersonName"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:hint="Phone"
+            android:padding="13dp"
+            android:enabled="false"
+            android:inputType="number"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Change phone number"
+            android:layout_marginTop="10dp"
+            android:onClick="onChangePhoneClicked"
+            android:layout_gravity="start"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/bgroup"
+            android:hint="Blood Group"
+            android:padding="13dp"
+            android:inputType="none"
+            android:focusable="false"
+            android:longClickable="false"
+            android:clickable="true"
+            android:maxLength="3"
+            android:onClick="showBloodGroupDialogbox"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/allergies"
+            android:hint="Allergies"
+            android:padding="13dp"
+            android:inputType="textCapWords"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/organ"
+            android:hint="Organ donor"
+            android:padding="13dp"
+            android:focusable="false"
+            android:longClickable="false"
+            android:clickable="true"
+            android:inputType="none"
+            android:onClick="showOrganDialogbox"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="#212121"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="15dp"
+            android:text="Find nearby places with in..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/radius"
+            android:hint="Radius (in m)"
+            android:padding="13dp"
+            android:maxLength="4"
+            android:inputType="number"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:paddingStart="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/add"
+                android:text="Emergency contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                app:fabSize="mini"
+                android:id="@+id/add"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:padding="16dp"
+                android:layout_centerVertical="true"
+                android:tint="#FFF"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/contact_list"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

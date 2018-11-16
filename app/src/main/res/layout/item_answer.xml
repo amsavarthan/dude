@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    app:cardMaxElevation="10dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="#212121"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/up"
+            android:background="#313131"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/name"
+                    android:textColor="#ddd"
+                    android:text="Amsavarthan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/timestamp"
+                    android:textColor="#ddd"
+                    android:text="just now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/answer"
+                android:textColor="#ddd"
+                android:textSize="20sp"
+                android:text="Answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/bottom"
+            android:background="#414141"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_gravity="start|center_vertical"
+                android:padding="10dp"
+                android:src="@drawable/ic_delete_white_24dp"
+                android:visibility="gone"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/unmrk_ans"
+                android:layout_gravity="end|center_vertical"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:drawablePadding="10dp"
+                android:text="Unmark as Answer"
+                android:visibility="gone"
+                android:drawableStart="@drawable/ic_close_black_24dp"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/mrk_ans"
+                android:layout_gravity="end|center_vertical"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:visibility="gone"
+                android:drawablePadding="10dp"
+                android:text="Mark as Answer"
+                android:drawableStart="@drawable/ic_done_white_24dp"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

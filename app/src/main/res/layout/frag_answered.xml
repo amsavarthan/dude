@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.AllQuestions">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/top"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Global Questions"
+            android:textSize="22sp"
+            android:textColor="#212121"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/filter"
+            android:padding="10dp"
+            android:src="@drawable/ic_filter_list_black_24dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.tylersuehr.esr.EmptyStateRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

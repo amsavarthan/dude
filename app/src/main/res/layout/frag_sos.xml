@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/pulsator"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            android:text="Trigger an SOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="17sp"
+            android:layout_below="@+id/title"
+            android:text="Click on the button above to start/stop SOS alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+        android:id="@+id/pulsator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:pulse_count="3"
+        app:pulse_duration="1000"
+        app:pulse_repeat="0"
+        app:pulse_color="@color/red"
+        app:pulse_startFromScratch="true"
+        app:pulse_interpolator="Linear">
+
+        <ImageView
+            android:id="@+id/button"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_sos_large"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+
+
+</FrameLayout>

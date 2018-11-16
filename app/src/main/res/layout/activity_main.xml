@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    tools:context=".activities.MainActivity">
+
+   <LinearLayout
+       android:id="@+id/top"
+       android:padding="5dp"
+       android:background="@drawable/gradient_morning"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <RelativeLayout
+          android:layout_marginTop="34dp"
+          android:layout_marginBottom="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/appname"
+             android:text="DUDE"
+             android:layout_marginLeft="10dp"
+             android:layout_alignParentStart="true"
+             android:layout_toLeftOf="@+id/settings"
+             android:textSize="25sp"
+             android:textColor="@color/colorPrimaryDark"
+             android:layout_centerVertical="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <ImageButton
+             android:id="@+id/settings"
+             android:layout_toStartOf="@+id/about"
+             android:layout_gravity="end"
+             android:padding="10dp"
+             android:tint="@color/colorPrimaryDark"
+             android:src="@drawable/ic_settings_black_24dp"
+             android:onClick="openSettings"
+             android:background="@null"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <ImageButton
+             android:id="@+id/about"
+             android:layout_alignParentEnd="true"
+             android:padding="10dp"
+             android:onClick="onLogoutClicked"
+             android:tint="@color/colorPrimaryDark"
+             android:src="@drawable/logout"
+             android:background="@null"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+      </RelativeLayout>
+
+      <FrameLayout
+          android:layout_marginBottom="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_toStartOf="@+id/image_time"
+                android:layout_alignParentStart="true"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/greeting"
+                   android:paddingStart="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/name"
+                   android:paddingStart="10dp"
+                   android:textColor="#313131"
+                   android:textSize="25sp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/image_time"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+         </RelativeLayout>
+
+      </FrameLayout>
+
+   </LinearLayout>
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/recyclerview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:overScrollMode="never"
+       android:scrollbars="none" />
+
+</LinearLayout>
